@@ -1,4 +1,5 @@
-Summary:	Tao is a synthesizer for modelling sounds with physical simulations
+Summary:	Tao - a synthesizer for modelling sounds with physical simulations
+Summary(pl):	Tao - syntezator do modelowania d¼wiêków poprzez symulacje fizyczne
 Name:		taopm
 Version:	1.0beta
 %define snap 20050827
@@ -20,21 +21,38 @@ virtual musical instruments. Tao comes with a synthesis language for
 creating and playing instruments and a fully documented (eventually)
 C++ API for those who would like to use it as an object library.
 
+%description -l pl
+Tao to pakiet oprogramowania do syntezy d¼wiêku przy u¿yciu modeli
+fizycznych. Udostêpnia wirtualny materia³ akustyczny skonstruowany z
+mas i strun, których mo¿na u¿ywaæ za podstawê do budowania do¶æ
+z³o¿onych wirtualnych instrumentów muzycznych. Tao zawiera jêzyk
+syntezy do tworzenia i gry na instrumentach oraz w pe³ni
+udokumentowane API C++ dla tych, którzy chcieliby u¿yæ go jako
+bibliotekê obiektów.
+
 %package devel
-Summary:	Development libraries and header files for tao library
+Summary:	Header files for tao library
+Summary(pl):	Pliki nag³ówkowe biblioteki tao
 Group:		Development/Libraries
+Requires:	%{name} = %{version}-%{release}
 
 %description devel
-This is the package containing the development libraries and header
-files for tao
+This is the package containing the header files for tao library.
+
+%description devel -l pl
+Ten pakiet zawiera pliki nag³ówkowe biblioteki tao.
 
 %package static
 Summary:	Static tao library
+Summary(pl):	Statyczna biblioteka tao
 Group:		Development/Libraries
 Requires:	%{name}-devel = %{version}-%{release}
 
 %description static
 Static tao library.
+
+%description static -l pl
+Statyczna biblioteka tao.
 
 %prep
 %setup -q -n tao-1.0-beta-27Aug2005
@@ -64,12 +82,13 @@ rm -rf $RPM_BUILD_ROOT
 %attr(755,root,root) %{_bindir}/tao
 %attr(755,root,root) %{_bindir}/tao2*
 %attr(755,root,root) %{_bindir}/taoparse
-%attr(755,root,root) %{_libdir}/libtao.so.0.0.0
+%attr(755,root,root) %{_libdir}/libtao.so.*.*.*
 %{_examplesdir}/%{name}-%{version}
 
 %files devel
 %defattr(644,root,root,755)
 %attr(755,root,root) %{_bindir}/tao-config
+%attr(755,root,root) %{_libdir}/libtao.so
 %{_libdir}/libtao.la
 
 %files static
