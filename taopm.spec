@@ -1,8 +1,3 @@
-#
-# Conditional build:
-%bcond_with	tests		# build with tests
-%bcond_without	tests		# build without tests
-#
 Summary:	Tao is a synthesizer for modelling sounds with physical simulations
 Name:		taopm
 Version:	1.0beta
@@ -18,7 +13,12 @@ BuildRequires:	glut-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-Tao is a software package for sound synthesis using physical models. It provides a virtual acoustic material constructed from masses and springs which can be used as the basis for building quite complex virtual musical instruments. Tao comes with a synthesis language for creating and playing instruments and a fully documented (eventually) C++ API for those who would like to use it as an object library.
+Tao is a software package for sound synthesis using physical models.
+It provides a virtual acoustic material constructed from masses and
+springs which can be used as the basis for building quite complex
+virtual musical instruments. Tao comes with a synthesis language for
+creating and playing instruments and a fully documented (eventually)
+C++ API for those who would like to use it as an object library.
 
 %package devel
 Summary:	Development libraries and header files for tao library
@@ -68,8 +68,10 @@ rm -rf $RPM_BUILD_ROOT
 %{_examplesdir}/%{name}-%{version}
 
 %files devel
+%defattr(644,root,root,755)
 %attr(755,root,root) %{_bindir}/tao-config
 %{_libdir}/libtao.la
 
 %files static
+%defattr(644,root,root,755)
 %{_libdir}/libtao.a
