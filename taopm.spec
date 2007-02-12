@@ -1,5 +1,5 @@
 Summary:	Tao - a synthesizer for modelling sounds with physical simulations
-Summary(pl):	Tao - syntezator do modelowania d¼wiêków poprzez symulacje fizyczne
+Summary(pl.UTF-8):   Tao - syntezator do modelowania dÅºwiÄ™kÃ³w poprzez symulacje fizyczne
 Name:		taopm
 Version:	1.0beta
 %define snap 20050827
@@ -21,37 +21,37 @@ virtual musical instruments. Tao comes with a synthesis language for
 creating and playing instruments and a fully documented (eventually)
 C++ API for those who would like to use it as an object library.
 
-%description -l pl
-Tao to pakiet oprogramowania do syntezy d¼wiêku przy u¿yciu modeli
-fizycznych. Udostêpnia wirtualny materia³ akustyczny skonstruowany z
-mas i strun, których mo¿na u¿ywaæ za podstawê do budowania do¶æ
-z³o¿onych wirtualnych instrumentów muzycznych. Tao zawiera jêzyk
-syntezy do tworzenia i gry na instrumentach oraz w pe³ni
-udokumentowane API C++ dla tych, którzy chcieliby u¿yæ go jako
-bibliotekê obiektów.
+%description -l pl.UTF-8
+Tao to pakiet oprogramowania do syntezy dÅºwiÄ™ku przy uÅ¼yciu modeli
+fizycznych. UdostÄ™pnia wirtualny materiaÅ‚ akustyczny skonstruowany z
+mas i strun, ktÃ³rych moÅ¼na uÅ¼ywaÄ‡ za podstawÄ™ do budowania doÅ›Ä‡
+zÅ‚oÅ¼onych wirtualnych instrumentÃ³w muzycznych. Tao zawiera jÄ™zyk
+syntezy do tworzenia i gry na instrumentach oraz w peÅ‚ni
+udokumentowane API C++ dla tych, ktÃ³rzy chcieliby uÅ¼yÄ‡ go jako
+bibliotekÄ™ obiektÃ³w.
 
 %package devel
 Summary:	Header files for tao library
-Summary(pl):	Pliki nag³ówkowe biblioteki tao
+Summary(pl.UTF-8):   Pliki nagÅ‚Ã³wkowe biblioteki tao
 Group:		Development/Libraries
 Requires:	%{name} = %{version}-%{release}
 
 %description devel
 This is the package containing the header files for tao library.
 
-%description devel -l pl
-Ten pakiet zawiera pliki nag³ówkowe biblioteki tao.
+%description devel -l pl.UTF-8
+Ten pakiet zawiera pliki nagÅ‚Ã³wkowe biblioteki tao.
 
 %package static
 Summary:	Static tao library
-Summary(pl):	Statyczna biblioteka tao
+Summary(pl.UTF-8):   Statyczna biblioteka tao
 Group:		Development/Libraries
 Requires:	%{name}-devel = %{version}-%{release}
 
 %description static
 Static tao library.
 
-%description static -l pl
+%description static -l pl.UTF-8
 Statyczna biblioteka tao.
 
 %prep
