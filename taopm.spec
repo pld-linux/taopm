@@ -1,5 +1,5 @@
 Summary:	Tao - a synthesizer for modelling sounds with physical simulations
-Summary(pl.UTF-8):   Tao - syntezator do modelowania dźwięków poprzez symulacje fizyczne
+Summary(pl.UTF-8):	Tao - syntezator do modelowania dźwięków poprzez symulacje fizyczne
 Name:		taopm
 Version:	1.0beta
 %define snap 20050827
@@ -32,7 +32,7 @@ bibliotekę obiektów.
 
 %package devel
 Summary:	Header files for tao library
-Summary(pl.UTF-8):   Pliki nagłówkowe biblioteki tao
+Summary(pl.UTF-8):	Pliki nagłówkowe biblioteki tao
 Group:		Development/Libraries
 Requires:	%{name} = %{version}-%{release}
 
@@ -44,7 +44,7 @@ Ten pakiet zawiera pliki nagłówkowe biblioteki tao.
 
 %package static
 Summary:	Static tao library
-Summary(pl.UTF-8):   Statyczna biblioteka tao
+Summary(pl.UTF-8):	Statyczna biblioteka tao
 Group:		Development/Libraries
 Requires:	%{name}-devel = %{version}-%{release}
 
